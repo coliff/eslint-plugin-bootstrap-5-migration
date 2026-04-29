@@ -1,0 +1,48 @@
+{
+  "name": "eslint-plugin-bootstrap-5-migration",
+  "version": "0.0.1-alpha.1",
+  "private": true,
+  "description": "ESLint rules to flag Bootstrap 4 classes and attribute patterns (prefer v5)",
+  "homepage": "https://github.com/coliff/eslint-plugin-bootstrap-5-migration#readme",
+  "bugs": {
+    "url": "https://github.com/coliff/eslint-plugin-bootstrap-5-migration/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coliff/eslint-plugin-bootstrap-5-migration.git"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/coliff"
+    },
+    {
+      "type": "PayPal",
+      "url": "https://paypal.me/coliff"
+    }
+  ],
+  "license": "MIT",
+  "author": "Christian Oliff (https://christianoliff.com)",
+  "files": [
+    "index.js",
+    "rules"
+  ],
+  "scripts": {
+    "lint": "npm run lint-js",
+    "lint:test-html": "eslint test/index.html",
+    "lint-html": "npx htmlhint **/*.html",
+    "lint-js": "npx eslint@8 rules/**/*.js --fix",
+    "prettier": "npx prettier --write \"*.{html,js,json,mjs,yml}\"",
+    "spellcheck": "npx cspell \"*.{html,js,json,md,mjs,txt,yml}\" --no-progress"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-plugin-bootstrap-migration": "file:."
+  },
+  "peerDependencies": {
+    "eslint": ">=8.57.1"
+  },
+  "volta": {
+    "node": "22.22.2"
+  }
+}
