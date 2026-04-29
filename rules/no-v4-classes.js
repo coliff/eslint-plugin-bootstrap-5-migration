@@ -130,8 +130,10 @@ const PATTERNS = [
       "v4 component helper removed in v5; use utility classes and the grid system",
   },
   {
-    regex: /\b(?:embed-responsive(?:-item)?|embed-responsive-(?:21by9|16by9|4by3|1by1))\b/g,
-    describe: "v4 embed-responsive helper replaced by ratio and ratio-* classes",
+    regex:
+      /\b(?:embed-responsive(?:-item)?|embed-responsive-(?:21by9|16by9|4by3|1by1))\b/g,
+    describe:
+      "v4 embed-responsive helper replaced by ratio and ratio-* classes",
   },
   {
     regex: /data-(?:toggle|target|dismiss|spy|ride|offset|interval|parent)=/g,
