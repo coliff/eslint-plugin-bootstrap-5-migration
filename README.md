@@ -76,6 +76,8 @@ With the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=
 }
 ```
 
+![ESLint running in VS Code](.github/eslint-vs-code.png)
+
 `source.fixAll.eslint` set to `"explicit"` runs only when you use **Save** or **Save All** (not on every automatic save). Adjust `eslint.validate` if you use additional file types this plugin checks.
 
 ## Rules

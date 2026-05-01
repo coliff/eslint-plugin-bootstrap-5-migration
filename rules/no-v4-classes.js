@@ -151,7 +151,7 @@ module.exports = {
     },
     messages: {
       forbidden:
-        "Bootstrap v4 migration pattern detected ({{hint}}). Use Bootstrap v5 equivalents.",
+        "Bootstrap v4 pattern detected ({{hint}}). Use Bootstrap v5 equivalents.",
     },
     fixable: "code",
     schema: [],
