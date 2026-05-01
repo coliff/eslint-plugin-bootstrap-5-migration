@@ -3,10 +3,10 @@
 function maskNonTemplateRegions(source) {
   let s = source;
   s = s.replace(/^---[\s\S]*?^---\s*\r?\n/m, (m) => " ".repeat(m.length));
-  s = s.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, (m) =>
+  s = s.replace(/<script\b[^>]*>[\s\S]*?<\/script\b[^>]*>/gi, (m) =>
     " ".repeat(m.length),
   );
-  s = s.replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, (m) =>
+  s = s.replace(/<style\b[^>]*>[\s\S]*?<\/style\b[^>]*>/gi, (m) =>
     " ".repeat(m.length),
   );
   return s;
